@@ -1,0 +1,14 @@
+======List of Updates made to the ideanote app======
+1. Restructured the existing code for app.py to the latest Python 3.5 syntax
+2. Added comments for future development
+3. Expiry session on user log in added
+4. Page reload counter added
+5. Render homepage with a timestamp added
+6. Upload file option added for users
+7. Upload picture option added for users, also displaying the recent uploaded pictures as thumbnails on the homepage
+8. Added multi-level permission for users, to add extra security of information
+9. Added a paragraph-styled 'Description' box for users to elaborate on the idea
+10. Made grammatical corrections in messages
+11. Added JavaScript for Facebook login 
+
+======THANK YOU======

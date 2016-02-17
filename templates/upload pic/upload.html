@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>upload</title>
+{% if filename is defined %}
+    <div id="image"><a href="{{ pic_path(filename) }}" target="_blank"><img class="new" src="{{ pic_path(filename) }}"></a></div>
+
+        <h2><p>The Label is: </p>{{ labels }}</h2>
+
+
+{% else %}
+    <ul>
+    {% for pic in pics %}
+        <li class="thumb"><a href="{{ url_for('show_pic', filename=pic) }}"><img class="thumb" src="{{ pic_path('thumb_'+pic) }}"></a></li>
+    {% endfor %}
+</head>
+
+<body>
+</body>
+</html>

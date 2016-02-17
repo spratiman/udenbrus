@@ -29,6 +29,7 @@
                     <thead>
                         <tr>
                             <th>#</th>
+                            <th> Subject</th>
                             <th> Description</th>
                         </tr>
                     </thead>
@@ -39,8 +40,13 @@
                             <td>
                               <a href="{{url_for("edit_idea", idea_id=idea.id)}}"><span class="glyphicon glyphicon-pencil"></span></a>
                               {{idea.idea_name}}
-                            </td>
-                          </tr>
+                            </td>                                                                    
+                        	<td>
+                             <a href="{{url_for("add_description", idea_id=idea.id)}}"><span class='glyphicon glyphicon-pencil'></span></a>
+                              {{idea.idea_description}}
+                             </td>
+                          <tr>
+                          <th
                       {% endfor %}
                     </tbody>
                 </table>
